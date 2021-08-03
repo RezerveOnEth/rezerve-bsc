@@ -1,4 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+@font-face {
+  font-family: 'Gazillions Script';
+  src: url('./assets/fonts/gazillions/Gazillions_Script.eot');
+  src: local('Gazillions Script'), local('GazillionsScript'),
+  url('./assets/fonts/gazillions/Gazillions_Script.eot?#iefix') format('embedded-opentype'),
+  url('./assets/fonts/gazillions/Gazillions_Script.woff') format('woff'),
+  url('./assets/fonts/gazillions/Gazillions_Script.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
 :root {
   --transition: 0.3s ease-in-out;
@@ -8,6 +19,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  outline: none;
 }
 
 html, body {

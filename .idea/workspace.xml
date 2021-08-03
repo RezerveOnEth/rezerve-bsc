@@ -1,12 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e16e39cb-95b9-4be9-81f0-4930dbe7e0a4" name="Changes" comment="add donut progressbar">
+    <list default="true" id="e16e39cb-95b9-4be9-81f0-4930dbe7e0a4" name="Changes" comment="add rate chart">
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/gazillions/Gazillions_Script.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/gazillions/Gazillions_Script.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/gazillions/Gazillions_Script.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/gazillions/Gazillions_Script.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/gazillions/Gazillions_Script.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Header/Header.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Header/Header.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Rate/Rate.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Rate/Rate.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Layout/Layout.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout/Layout.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Layout/Layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout/Layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navbar/Navbar.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/Navbar.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Rate/Rate.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Rate/Rate.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Total/Total.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Total/Total.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Total/Total.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Total/Total.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Vault/Vault.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Vault/Vault.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Vault/Vault.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Vault/Vault.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Status/Status.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Status/Status.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Status/Status.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Status/Status.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Swap/Swap.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Swap/Swap.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Swap/Swap.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Swap/Swap.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,12 +54,18 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/assets/fonts/gazillions" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="ts.external.directory.path" value="C:\Users\elesk\OneDrive\Desktop\Work\rezerve\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\elesk\OneDrive\Desktop\Work\rezerve\src\assets\fonts\gazillions" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
@@ -73,7 +96,8 @@
       <workItem from="1627988372484" duration="1852000" />
       <workItem from="1627996945974" duration="1335000" />
       <workItem from="1627998594497" duration="2649000" />
-      <workItem from="1628004079322" duration="2496000" />
+      <workItem from="1628004079322" duration="3289000" />
+      <workItem from="1628010745999" duration="7956000" />
     </task>
     <task id="LOCAL-00001" summary="success Status page">
       <created>1628000053045</created>
@@ -89,7 +113,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628004749346</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add rate chart">
+      <created>1628006864215</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1628006864215</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -111,6 +142,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="success Status page" />
     <MESSAGE value="add donut progressbar" />
-    <option name="LAST_COMMIT_MESSAGE" value="add donut progressbar" />
+    <MESSAGE value="add rate chart" />
+    <option name="LAST_COMMIT_MESSAGE" value="add rate chart" />
   </component>
 </project>

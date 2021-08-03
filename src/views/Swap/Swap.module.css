@@ -1,0 +1,182 @@
+.Swap {
+  display: grid;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  overflow-y: scroll;
+  padding-bottom: 30px;
+  position: relative;
+  z-index: 1;
+}
+
+.Swap::-webkit-scrollbar {
+  display: none;
+}
+
+::-webkit-scrollbar-thumb {
+  display: none;
+}
+
+.Swap .Swap__form {
+  background: #FFFFFF;
+  box-shadow: 0 10px 30px rgba(19, 23, 31, 0.2);
+  border-radius: 20px;
+  padding: 16px;
+  width: 560px;
+  margin-top: 60px;
+}
+
+.Swap .Swap__form .Swap__title {
+  font-family: 'Gazillions Script', sans-serif;
+  font-size: 82px;
+  color: #343434;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/*.Swap .Swap__form .Swap__close {*/
+/*  font-family: 'Gazillions Script', sans-serif;*/
+/*  font-size: 39px;*/
+/*  color: #343434;*/
+/*  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);*/
+/*  background: transparent;*/
+/*  margin-left: auto;*/
+/*  padding: 0;*/
+/*  height: 36px;*/
+/*  width: 36px;*/
+/*  display: inline-flex;*/
+/*  flex-direction: column;*/
+/*  justify-content: center;*/
+/*  align-items: center;*/
+/*  border: none;*/
+/*  cursor: pointer;*/
+/*}*/
+
+.Swap .Swap__form .Swap__container {
+  padding: 0 64px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Swap .Swap__form .Swap__input {
+  background: #E8E8E8;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+  border-radius: 14px;
+  width: 100%;
+  padding: 24px;
+  border: none;
+  font-size: 32px;
+}
+
+.Swap .Swap__form img {
+  margin: 4px auto;
+}
+
+.Swap .Swap__form .Swap__button {
+  background: linear-gradient(180deg, #205EB3 0%, #86AFFB 165.27%);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 24px;
+  padding: 8px 42px;
+  border: none;
+  margin-left: auto;
+  font-size: 25px;
+  color: #FFFFFF;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  margin-top: 24px;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.Swap .Swap__form .Swap__button:hover {
+  text-shadow: none;
+  transition: var(--transition);
+}
+
+.Swap .Swap__form .Swap__button:active {
+  text-shadow: none;
+  box-shadow: none;
+  transition: var(--transition);
+}
+
+.Swap .Swap__form .Swap__rate {
+  font-size: 16px;
+  color: #565656;
+}
+
+@media (max-width: 840px) {
+  .Swap {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .Swap .Swap__form {
+    margin-top: 40px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 720px) {
+  .Swap .Swap__form {
+    padding: 8px;
+  }
+
+  .Swap .Swap__form .Swap__title {
+    font-size: 48px;
+  }
+
+  .Swap .Swap__form .Swap__container {
+    padding: 0 36px;
+  }
+
+  .Swap .Swap__form .Swap__input {
+    border-radius: 14px;
+    padding: 16px;
+    font-size: 24px;
+  }
+
+  .Swap .Swap__form .Swap__button {
+    padding: 8px 24px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Swap .Swap__form .Swap__title {
+    font-size: 36px;
+  }
+
+  .Swap .Swap__form .Swap__button {
+    width: 100%;
+  }
+
+  .Swap .Swap__form .Swap__input {
+    padding: 12px;
+    font-size: 20px;
+  }
+
+  .Swap .Swap__form .Swap__rate {
+    margin-top: 16px;
+    display: block;
+  }
+
+  .Swap .Swap__form .Swap__container {
+    padding: 0 16px;
+  }
+}
+
+
+/*@media (prefers-color-scheme: dark) {*/
+/*  .Swap .Swap__form {*/
+/*    background: #212121;*/
+/*  }*/
+
+/*  .Swap .Swap__form .Swap__rate {*/
+/*    color: #e0e0e0;*/
+/*  }*/
+
+/*  .Swap .Swap__form .Swap__title {*/
+/*    color: #fafafa;*/
+/*  }*/
+/*}*/

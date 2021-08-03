@@ -37,3 +37,19 @@
 .Rate .Rate__value span:last-child span {
   letter-spacing: 8px;
 }
+
+@media (max-width: 1170px) {
+  .Rate header {
+    margin: 8px 24px 0 24px;
+  }
+}
+
+/*@media (prefers-color-scheme: dark) {*/
+/*  .Rate .Rate__value span:first-child {*/
+/*    color: #fafafa;*/
+/*  }*/
+
+/*  .Rate .Rate__value span:last-child {*/
+/*    color: #fafafa;*/
+/*  }*/
+/*}*/

@@ -7,9 +7,6 @@ import Vault from '../../components/Vault/Vault';
 const Status = () => {
   return (
     <div className={styles.Status}>
-      <header className={styles.Status__header}>
-        <button className={styles.Status__connect}>Connect Wallet</button>
-      </header>
       <div className={styles.Status__greeting}>
         <h1 className={styles.Status__title}>
           Welcome to <strong>THE VAULT.</strong>
