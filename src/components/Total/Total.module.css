@@ -2,10 +2,11 @@
   grid-area: Total;
   padding: 24px;
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: auto 1fr;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 30px;
   grid-row-gap: 20px;
+  align-items: center;
 }
 
 .Total .Total__supply span {
@@ -15,4 +16,10 @@
   display: block;
   text-align: center;
   letter-spacing: 8px;
+}
+
+.Total .Total__burned {
+  max-width: 96px;
+  max-height: 96px;
+  margin: auto;
 }

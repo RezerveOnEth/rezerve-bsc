@@ -1,34 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e16e39cb-95b9-4be9-81f0-4930dbe7e0a4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/rezerve.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/App.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/arrow-icon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/status-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/swap-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Layout/Layout.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Layout/Layout.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Navbar/Navbar.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Navbar/Navbar.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Rate/Rate.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Rate/Rate.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Total/Total.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Total/Total.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Vault/Vault.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Vault/Vault.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/Status/Status.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/Status/Status.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/Swap/Swap.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/Swap/Swap.tsx" afterDir="false" />
+    <list default="true" id="e16e39cb-95b9-4be9-81f0-4930dbe7e0a4" name="Changes" comment="success Status page">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Total/Total.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Total/Total.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Total/Total.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Total/Total.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Vault/Vault.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Vault/Vault.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -95,8 +74,17 @@
       <workItem from="1627979558673" duration="2333000" />
       <workItem from="1627988372484" duration="1852000" />
       <workItem from="1627996945974" duration="1335000" />
-      <workItem from="1627998594497" duration="1287000" />
+      <workItem from="1627998594497" duration="2649000" />
+      <workItem from="1628004079322" duration="517000" />
     </task>
+    <task id="LOCAL-00001" summary="success Status page">
+      <created>1628000053045</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1628000053045</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -116,5 +104,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="success Status page" />
+    <option name="LAST_COMMIT_MESSAGE" value="success Status page" />
   </component>
 </project>

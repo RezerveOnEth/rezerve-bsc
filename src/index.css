@@ -13,3 +13,11 @@
 html, body {
   font-family: 'Roboto', sans-serif;
 }
+
+.CircularProgressbar-trail {
+  stroke-width: 5;
+}
+
+.CircularProgressbar-path {
+  stroke-width: 5;
+}
