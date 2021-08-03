@@ -1,0 +1,39 @@
+.Rate {
+  grid-area: Rate;
+}
+
+.Rate header {
+  margin: 24px 42px 0 42px;
+}
+
+.Rate .Rate__title {
+  font-weight: bold;
+  font-size: 25px;
+  color: #858997;
+  margin-bottom: 20px;
+  display: block;
+  text-align: center;
+}
+
+.Rate .Rate__value {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Rate .Rate__value span:first-child {
+  margin-bottom: 56px;
+  font-weight: 500;
+  font-size: 16px;
+  color: #15181A;
+}
+
+.Rate .Rate__value span:last-child {
+  font-weight: 500;
+  font-size: 32px;
+  color: #15181A;
+}
+
+.Rate .Rate__value span:last-child span {
+  letter-spacing: 8px;
+}

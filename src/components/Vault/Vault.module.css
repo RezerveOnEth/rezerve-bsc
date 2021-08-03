@@ -1,0 +1,31 @@
+.Vault {
+  grid-area: Vault;
+  position: relative;
+  padding: 24px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 30px;
+  grid-row-gap: 20px;
+}
+
+.Vault::before {
+  content: '';
+  display: block;
+  width: 2px;
+  height: calc(100% - 30px);
+  position: absolute;
+  padding: 0;
+  margin: auto;
+  inset: 0;
+  background-color: #979797;
+}
+
+.Vault .Vault__value span {
+  font-weight: bold;
+  font-size: 32px;
+  color: #15181A;
+  display: block;
+  text-align: center;
+  letter-spacing: 8px;
+}

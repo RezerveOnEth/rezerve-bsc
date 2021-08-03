@@ -1,0 +1,18 @@
+.Total {
+  grid-area: Total;
+  padding: 24px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 30px;
+  grid-row-gap: 20px;
+}
+
+.Total .Total__supply span {
+  font-weight: bold;
+  font-size: 32px;
+  color: #15181A;
+  display: block;
+  text-align: center;
+  letter-spacing: 8px;
+}

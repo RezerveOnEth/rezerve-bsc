@@ -1,0 +1,96 @@
+.Status {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.Status::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 70%;
+  background-color: #397DFF;
+  border-bottom-left-radius: 200px;
+  position: absolute;
+  inset: 0 0 auto 0;
+  z-index: -1;
+}
+
+.Status .Status__header {
+  padding: 20px 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.Status .Status__header .Status__connect {
+  background: #FFFFFF;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 30px;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  font-family: 'Rubik', 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #858997;
+  transition: var(--transition);
+}
+
+.Status .Status__header .Status__connect:hover {
+  transition: var(--transition);
+  background-color: #eeeeee;
+}
+
+.Status .Status__header .Status__connect:active {
+  transition: var(--transition);
+  box-shadow: none;
+  background-color: #eeeeee;
+}
+
+.Status .Status__greeting {
+  margin-left: 110px;
+}
+
+.Status .Status__greeting .Status__title {
+  font-weight: 300;
+  font-size: 36px;
+  color: #ffffff;
+}
+
+.Status .Status__greeting .Status__title strong {
+  font-weight: 500;
+}
+
+.Status .Status__greeting .Status__subtitle {
+  font-size: 17px;
+  color: #ffffff;
+  font-weight: normal;
+  margin-top: 16px;
+}
+
+.Status .Status__widgets {
+  display: grid;
+  grid-row-gap: 30px;
+  grid-column-gap: 56px;
+  grid-template-areas:
+    'Total Rate'
+    'Vault Rate'
+  ;
+  justify-content: center;
+  margin-top: 15%;
+}
+
+.Status .Status__widgets > div {
+  background: #ffffff;
+  box-shadow: 0 10px 30px rgba(19, 23, 31, 0.2);
+  border-radius: 20px;
+  max-width: 420px;
+}
+
+.Status .Status__widgets > div > span {
+  font-size: 16px;
+  color: #858997;
+  text-align: center;
+  width: 100%;
+}
