@@ -86,6 +86,7 @@
   box-shadow: 0 10px 30px rgba(19, 23, 31, 0.2);
   border-radius: 20px;
   max-width: 420px;
+  overflow: hidden;
 }
 
 .Status .Status__widgets > div > span {
