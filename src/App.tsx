@@ -46,7 +46,9 @@ const App = () => {
 
   useEffect(() => {
     (async () => {
-      const web3 = new Web3('https://data-seed-prebsc-1-s1.binance.org:8545');
+      // const web3 = new Web3(Web3.givenProvider || 'https://bsc-dataseed.binance.org/');
+      const web3 = new Web3(Web3.givenProvider || 'https://data-seed-prebsc-1-s1.binance.org:8545');
+
       setWindowWeb3(web3);
     })();
   }, []);

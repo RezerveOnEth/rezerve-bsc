@@ -8,27 +8,21 @@ import {Dispatch, SetStateAction, useEffect, useState} from 'react';
 
 interface IStatus {
   windowWeb3: Web3 | undefined;
-  RZRV: any;
+  contract: any;
 }
 
-const Status = ({windowWeb3, RZRV}: IStatus) => {
-  const [currentSupply, setCurrentSupply]: [number, Dispatch<SetStateAction<number>>] = useState(0);
+const Status = ({windowWeb3, contract}: IStatus) => {
   const [currentRate, setCurrentRate]: [number, Dispatch<SetStateAction<number>>] = useState(0);
+  const [currentSupply, setCurrentSupply]: [number, Dispatch<SetStateAction<number>>] = useState(0);
 
   useEffect(() => {
     (async () => {
       if (windowWeb3) {
-        console.log(windowWeb3);
-        const RZRVAbi: any = RZRV.abi;
-        const contract = await new windowWeb3.eth.Contract(RZRVAbi, RZRV.address);
-        contract.methods.currentsupply().call().then(setCurrentSupply);
-        contract.methods.exchangeAmount(1).call().then(setCurrentRate);
-
-
-        console.log(await contract.methods.floorPrice().call());
+        contract?.methods.currentsupply().call().then(setCurrentSupply);
+        contract?.methods.exchangeAmount(1).call().then(setCurrentRate);
       }
     })();
-  }, [RZRV.abi, RZRV.address, windowWeb3]);
+  }, [contract?.methods, windowWeb3]);
 
   return (
     <div className={styles.Status}>

@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e16e39cb-95b9-4be9-81f0-4930dbe7e0a4" name="Changes" comment="add wallet connect">
-      <change afterPath="$PROJECT_DIR$/public/favicon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+    <list default="true" id="e16e39cb-95b9-4be9-81f0-4930dbe7e0a4" name="Changes" comment="change favicon">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Layout/Layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout/Layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Status/Status.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Status/Status.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Swap/Swap.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Swap/Swap.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +24,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="1wD3tvn9GGAKvyA9p9VfREr6dXg" />
   <component name="ProjectLevelVcsManager">
@@ -45,6 +56,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\elesk\OneDrive\Desktop\Work\rezerve\public" />
       <recent name="C:\Users\elesk\OneDrive\Desktop\Work\rezerve\src\assets\fonts\gazillions" />
     </key>
   </component>
@@ -79,7 +91,8 @@
       <workItem from="1627998594497" duration="2649000" />
       <workItem from="1628004079322" duration="3289000" />
       <workItem from="1628010745999" duration="8342000" />
-      <workItem from="1628065409080" duration="6563000" />
+      <workItem from="1628065409080" duration="6601000" />
+      <workItem from="1628081870352" duration="4498000" />
     </task>
     <task id="LOCAL-00001" summary="success Status page">
       <created>1628000053045</created>
@@ -116,7 +129,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628071841065</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="change favicon">
+      <created>1628072045325</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1628072045325</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -141,6 +161,7 @@
     <MESSAGE value="add rate chart" />
     <MESSAGE value="success UI development" />
     <MESSAGE value="add wallet connect" />
-    <option name="LAST_COMMIT_MESSAGE" value="add wallet connect" />
+    <MESSAGE value="change favicon" />
+    <option name="LAST_COMMIT_MESSAGE" value="change favicon" />
   </component>
 </project>
