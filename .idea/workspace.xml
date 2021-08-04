@@ -1,20 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e16e39cb-95b9-4be9-81f0-4930dbe7e0a4" name="Changes" comment="success UI development">
-      <change afterPath="$PROJECT_DIR$/src/contracts/RZRV.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Layout/Layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout/Layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Rate/Rate.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Rate/Rate.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Rate/Rate.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Rate/Rate.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Total/Total.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Total/Total.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Total/Total.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Total/Total.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Vault/Vault.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Vault/Vault.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Status/Status.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Status/Status.tsx" afterDir="false" />
+    <list default="true" id="e16e39cb-95b9-4be9-81f0-4930dbe7e0a4" name="Changes" comment="add wallet connect">
+      <change afterPath="$PROJECT_DIR$/public/favicon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +35,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/assets/fonts/gazillions" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -89,7 +79,7 @@
       <workItem from="1627998594497" duration="2649000" />
       <workItem from="1628004079322" duration="3289000" />
       <workItem from="1628010745999" duration="8342000" />
-      <workItem from="1628065409080" duration="6250000" />
+      <workItem from="1628065409080" duration="6563000" />
     </task>
     <task id="LOCAL-00001" summary="success Status page">
       <created>1628000053045</created>
@@ -119,7 +109,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628019151388</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add wallet connect">
+      <created>1628071841065</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1628071841065</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -143,6 +140,7 @@
     <MESSAGE value="add donut progressbar" />
     <MESSAGE value="add rate chart" />
     <MESSAGE value="success UI development" />
-    <option name="LAST_COMMIT_MESSAGE" value="success UI development" />
+    <MESSAGE value="add wallet connect" />
+    <option name="LAST_COMMIT_MESSAGE" value="add wallet connect" />
   </component>
 </project>
