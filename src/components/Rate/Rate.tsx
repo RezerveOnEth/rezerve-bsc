@@ -1,14 +1,18 @@
 import styles from './Rate.module.css';
 import ReactApexChart from 'react-apexcharts';
 
-const Rate = () => {
+interface IRate {
+  currentRate: number;
+}
+
+const Rate = ({currentRate}: IRate) => {
   return (
     <div className={styles.Rate}>
       <header>
         <span className={styles.Rate__title}>Current Vault Swap Rate</span>
         <div className={styles.Rate__value}>
           <span>1 RZRV =</span>
-          <span><span>----</span> DAI</span>
+          <span><span>{currentRate}</span> DAI</span>
         </div>
       </header>
 

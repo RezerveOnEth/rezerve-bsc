@@ -3,13 +3,17 @@ import styles from './Total.module.css';
 import {buildStyles, CircularProgressbar} from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 
-const Total = () => {
+interface ITotal {
+  currentSupply: number;
+}
+
+const Total = ({currentSupply}: ITotal) => {
   return (
     <div className={styles.Total}>
       <div className={styles.Total__column}>
         <span>Total Circulating Supply</span>
         <div className={styles.Total__supply}>
-          <div>------</div>
+          <div>{(currentSupply / 100000000000).toFixed(0)}</div>
         </div>
       </div>
       <div className={styles.Total__column}>
