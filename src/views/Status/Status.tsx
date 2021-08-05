@@ -8,21 +8,38 @@ import {Dispatch, SetStateAction, useEffect, useState} from 'react';
 
 interface IStatus {
   windowWeb3: Web3 | undefined;
-  contract: any;
+  ReserveExchangeContract: any;
+  ReserveContract: any;
 }
 
-const Status = ({windowWeb3, contract}: IStatus) => {
+const Status = ({windowWeb3, ReserveExchangeContract, ReserveContract}: IStatus) => {
   const [currentRate, setCurrentRate]: [number, Dispatch<SetStateAction<number>>] = useState(0);
   const [currentSupply, setCurrentSupply]: [number, Dispatch<SetStateAction<number>>] = useState(0);
+  const [currentVault, setCurrentVault]: [number, Dispatch<SetStateAction<number>>] = useState(0);
+  const [totalBurned, setTotalBurned]: [number, Dispatch<SetStateAction<number>>] = useState(0);
+
 
   useEffect(() => {
     (async () => {
       if (windowWeb3) {
-        contract?.methods.currentsupply().call().then(setCurrentSupply);
-        contract?.methods.exchangeAmount(1).call().then(setCurrentRate);
+        ReserveContract?.methods.totalSupply().call().then((result: number) => {
+          setCurrentSupply(result / 1e9);
+        });
+        ReserveExchangeContract?.methods.floorPrice().call().then((result: number) => {
+          setCurrentRate(result / 1e9);
+        });
+        ReserveExchangeContract?.methods.daiBalance().call().then((result: number) => {
+          setCurrentVault(result / 1e9);
+        });
+        ReserveContract?.methods
+          .balanceOf(await ReserveContract?.methods.burnAddress().call())
+          .call()
+          .then((result: number) => {
+            setTotalBurned(Number((Number(String(result)) / 1e9).toFixed(0)));
+          });
       }
     })();
-  }, [contract?.methods, windowWeb3]);
+  }, [ReserveContract?.methods, ReserveExchangeContract?.methods, totalBurned, windowWeb3]);
 
   return (
     <div className={styles.Status}>
@@ -37,8 +54,12 @@ const Status = ({windowWeb3, contract}: IStatus) => {
       <div className={styles.Status__widgets}>
         <Total
           currentSupply={currentSupply}
+          totalBurned={totalBurned}
         />
-        <Vault/>
+        <Vault
+          totalBurned={totalBurned}
+          currentVault={currentVault}
+        />
         <Rate
           currentRate={currentRate}
         />

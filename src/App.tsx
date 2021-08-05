@@ -1,5 +1,6 @@
 import styles from './App.module.css';
-import RZRV from './contracts/RZRV.json';
+import ReserveExchange from './contracts/ReserveExchange.json';
+import Reserve from './contracts/Reserve.json';
 
 import {BrowserRouter} from 'react-router-dom';
 import Web3 from 'web3';
@@ -22,7 +23,6 @@ const App = () => {
           56: 'https://data-seed-prebsc-1-s1.binance.org:8545/'
         },
         network: 'binance',
-        chainId: 56,
         infuraId: '57713afc30094d0e8470f83df3cf3e2a',
       }
     },
@@ -40,13 +40,13 @@ const App = () => {
   };
 
   const web3Modal = new Web3Modal({
+    network: 'testnet',
     cacheProvider: true, // optional
     providerOptions // required
   });
 
   useEffect(() => {
     (async () => {
-      // const web3 = new Web3(Web3.givenProvider || 'https://bsc-dataseed.binance.org/');
       const web3 = new Web3(Web3.givenProvider || 'https://data-seed-prebsc-1-s1.binance.org:8545');
 
       setWindowWeb3(web3);
@@ -60,7 +60,8 @@ const App = () => {
           <Navbar/>
           <Layout
             windowWeb3={windowWeb3}
-            RZRV={RZRV}
+            ReserveExchange={ReserveExchange}
+            Reserve={Reserve}
             web3Modal={web3Modal}
             setWindowWeb3={setWindowWeb3}
           />

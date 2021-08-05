@@ -12,7 +12,7 @@
 .Vault::before {
   content: '';
   display: block;
-  width: 2px;
+  width: 1px;
   height: calc(100% - 30px);
   position: absolute;
   padding: 0;
@@ -32,7 +32,7 @@
 
 .Vault .Vault__value div {
   font-weight: bold;
-  font-size: 32px;
+  font-size: 22px;
   color: #15181A;
   display: block;
   text-align: center;

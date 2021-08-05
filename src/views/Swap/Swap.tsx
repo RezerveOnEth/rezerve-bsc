@@ -1,41 +1,56 @@
 import styles from './Swap.module.css';
 import arrow_icon_alt from '../../assets/images/arrow-icon-alt.svg';
-import {Dispatch, SetStateAction, useEffect, useState} from 'react';
+import {useEffect, useState} from 'react';
 import Web3 from 'web3';
 
 interface ISwap {
   windowWeb3: Web3 | undefined;
-  contract: any;
+  ReserveExchangeContract: any;
+  ReserveContract: any;
   account: string;
 }
 
-const Swap = ({windowWeb3, contract, account}: ISwap) => {
-  const [currentRate, setCurrentRate]: [number, Dispatch<SetStateAction<number>>] = useState(0);
-  const [exchangeValue, setExchangeValue]: [number, Dispatch<SetStateAction<number>>] = useState(0);
-  const [exchangeResult, setExchangeResult]: [number, Dispatch<SetStateAction<number>>] = useState(0);
+const Swap = ({windowWeb3, ReserveExchangeContract, ReserveContract, account}: ISwap) => {
+  const [currentRate, setCurrentRate] = useState(0);
+  const [exchangeValue, setExchangeValue] = useState('');
+  const [exchangeResult, setExchangeResult] = useState('');
   const [isActiveExchange, setIsActiveExchange] = useState(false);
 
   useEffect(() => {
     (async () => {
       if (windowWeb3) {
-        contract?.methods.exchangeAmount(1).call().then((result: number) => {
+        ReserveExchangeContract?.methods.exchangeAmount(1).call().then((result: number) => {
           setCurrentRate(result);
           setIsActiveExchange(true);
           // setAddress(contract.eth.)
         });
       }
     })();
-  }, [contract?.methods, windowWeb3]);
+  }, [ReserveExchangeContract?.methods, windowWeb3]);
 
   const handleOnClick = () => {
-    if (account) {
-      contract?.methods.exchangeAmount(1).send({
-        from: account,
-        // value: windowWeb3?.utils.toWei('0.0015', 'ether')
-      });
+    (async () => {
+      if (account) {
+        const _receiver = await ReserveExchangeContract?.methods.ReserveAddress().call();
 
-      console.log(contract?.methods.daiBalance().call());
-    }
+        windowWeb3?.eth
+          .sendTransaction({
+            from: account,
+            to: _receiver,
+            value: windowWeb3?.utils.toWei('0.5', 'ether')
+          })
+          .then(() => {
+            ReserveContract?.methods.transfer(_receiver, exchangeValue, {from: account}).call();
+          });
+        // ReserveContract?.methods
+        //   .transferFrom(account, await ReserveExchangeContract?.methods.ReserveAddress().call(), 1)
+        //   .send({
+        //     from: account
+        //   })
+
+
+      }
+    })();
   };
 
   return (
@@ -49,10 +64,10 @@ const Swap = ({windowWeb3, contract, account}: ISwap) => {
             type="number"
             min={0}
             className={styles.Swap__input}
-            value={exchangeValue?.toString()}
+            value={exchangeValue}
             onChange={(event) => {
-              setExchangeValue(Number(event.target.value));
-              setExchangeResult(Number(event.target.value) * currentRate);
+              setExchangeValue(event.target.value);
+              setExchangeResult((Number(event.target.value) * currentRate).toString());
             }}
             disabled={!isActiveExchange}
           />
@@ -61,10 +76,10 @@ const Swap = ({windowWeb3, contract, account}: ISwap) => {
             type="number"
             min={0}
             className={styles.Swap__input}
-            value={exchangeResult?.toString()}
+            value={exchangeResult}
             onChange={(event) => {
-              setExchangeResult(Number(event.target.value));
-              setExchangeValue(Number(event.target.value) / currentRate);
+              setExchangeResult(event.target.value);
+              setExchangeValue((Number(event.target.value) / currentRate).toString());
             }}
             disabled={true}
           />
@@ -78,7 +93,7 @@ const Swap = ({windowWeb3, contract, account}: ISwap) => {
           </button>
         </div>
 
-        <span className={styles.Swap__rate}>*1 RZRV =  {currentRate} DAI</span>
+        <span className={styles.Swap__rate}>*1 RZRV = {currentRate} DAI</span>
       </div>
     </div>
   );

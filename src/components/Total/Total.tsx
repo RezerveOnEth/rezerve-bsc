@@ -5,23 +5,25 @@ import 'react-circular-progressbar/dist/styles.css';
 
 interface ITotal {
   currentSupply: number;
+  totalBurned: number;
 }
 
-const Total = ({currentSupply}: ITotal) => {
+const Total = ({currentSupply, totalBurned}: ITotal) => {
+
   return (
     <div className={styles.Total}>
       <div className={styles.Total__column}>
         <span>Total Circulating Supply</span>
         <div className={styles.Total__supply}>
-          <div>{(currentSupply / 100000000000).toFixed(0)}</div>
+          <div>{new Intl.NumberFormat().format(currentSupply)}</div>
         </div>
       </div>
       <div className={styles.Total__column}>
         <span>RZRV Burned</span>
         <div className={styles.Total__burned}>
           <CircularProgressbar
-            value={80}
-            text={`${80}%`}
+            value={Number((totalBurned * 100 / 21000000))}
+            text={`${new Intl.NumberFormat().format(Number((totalBurned * 100 / 21000000).toFixed(2)))}%`}
             styles={buildStyles({
               textSize: '14px',
               pathTransitionDuration: 0.5,

@@ -12,27 +12,30 @@ import {Dispatch, SetStateAction, useEffect, useState} from 'react';
 
 interface ILayout {
   windowWeb3: Web3 | undefined;
-  RZRV: any;
+  ReserveExchange: any;
+  Reserve: any;
   web3Modal: Web3Modal;
   setWindowWeb3: Dispatch<SetStateAction<Web3 | undefined>>;
 }
 
-const Layout = ({windowWeb3, RZRV, web3Modal, setWindowWeb3}: ILayout) => {
-  const [contract, setContract]: [Contract | undefined, Dispatch<SetStateAction<Contract | undefined>>] = useState();
+const Layout = ({windowWeb3, ReserveExchange, Reserve, web3Modal, setWindowWeb3}: ILayout) => {
+  const [ReserveExchangeContract, setReserveExchangeContract]: [Contract | undefined, Dispatch<SetStateAction<Contract | undefined>>] = useState();
+  const [ReserveContract, setReserveContract]: [Contract | undefined, Dispatch<SetStateAction<Contract | undefined>>] = useState();
   const [account, setAccount]: [string, Dispatch<SetStateAction<string>>] = useState('');
 
   useEffect(() => {
     (async () => {
       if (windowWeb3) {
-        const RZRVAbi: any = RZRV.abi;
-        const _contract: any = await new windowWeb3.eth.Contract(RZRVAbi, RZRV.address);
+        const ReserveExchangeAbi: any = ReserveExchange.abi;
+        const _ReserveExchangeContract: any = await new windowWeb3.eth.Contract(ReserveExchangeAbi, ReserveExchange.address);
+        setReserveExchangeContract(_ReserveExchangeContract);
 
-        setContract(_contract);
-        // console.log(await contract.methods.currentsupply().call());
-        // console.log(await contract.methods.daiBalance().call());
+        const ReserveAbi: any = Reserve.abi;
+        const _ReserveContract: any = await new windowWeb3.eth.Contract(ReserveAbi, Reserve.address);
+        setReserveContract(_ReserveContract);
       }
     })();
-  }, [RZRV.abi, RZRV.address, windowWeb3]);
+  }, [Reserve.abi, Reserve.address, ReserveExchange.abi, ReserveExchange.address, windowWeb3]);
 
   return (
     <div className={styles.Layout}>
@@ -45,13 +48,15 @@ const Layout = ({windowWeb3, RZRV, web3Modal, setWindowWeb3}: ILayout) => {
         <Route exact path="/">
           <Status
             windowWeb3={windowWeb3}
-            contract={contract}
+            ReserveExchangeContract={ReserveExchangeContract}
+            ReserveContract={ReserveContract}
           />
         </Route>
         <Route exact path="/swap">
           <Swap
             windowWeb3={windowWeb3}
-            contract={contract}
+            ReserveExchangeContract={ReserveExchangeContract}
+            ReserveContract={ReserveContract}
             account={account}
           />
         </Route>

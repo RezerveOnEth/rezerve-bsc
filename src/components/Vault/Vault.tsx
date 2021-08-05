@@ -1,18 +1,23 @@
 import styles from './Vault.module.css';
 
-const Vault = () => {
+interface IVault {
+  currentVault: number;
+  totalBurned: number;
+}
+
+const Vault = ({currentVault, totalBurned}: IVault) => {
   return (
     <div className={styles.Vault}>
       <div className={styles.Vault__column}>
         <span>Total No. Burned</span>
         <div className={styles.Vault__value}>
-          <div>------</div>
+          <div>{new Intl.NumberFormat().format(totalBurned)}</div>
         </div>
       </div>
       <div className={styles.Vault__column}>
         <span>DAI in Vault</span>
         <div className={styles.Vault__value}>
-          <div>-----</div>
+          <div>{new Intl.NumberFormat().format(Number(currentVault.toFixed(0)))}</div>
         </div>
       </div>
     </div>
