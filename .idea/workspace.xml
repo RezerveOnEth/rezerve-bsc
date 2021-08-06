@@ -1,22 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e16e39cb-95b9-4be9-81f0-4930dbe7e0a4" name="Changes" comment="success all application">
+    <list default="true" id="e16e39cb-95b9-4be9-81f0-4930dbe7e0a4" name="Changes" comment="minor fixed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Layout/Layout.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout/Layout.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/minshad.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Navbar/Navbar.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/Navbar.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Rate/Rate.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Rate/Rate.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Rate/Rate.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Rate/Rate.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Total/Total.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Total/Total.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Vault/Vault.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Vault/Vault.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Vault/Vault.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Vault/Vault.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Status/Status.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Status/Status.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Status/Status.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Status/Status.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Swap/Swap.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Swap/Swap.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Swap/Swap.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Swap/Swap.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,6 +57,9 @@
       <recent name="C:\Users\elesk\OneDrive\Desktop\Work\rezerve\src\contracts" />
       <recent name="C:\Users\elesk\OneDrive\Desktop\Work\rezerve\public" />
       <recent name="C:\Users\elesk\OneDrive\Desktop\Work\rezerve\src\assets\fonts\gazillions" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\elesk\OneDrive\Desktop\Work\rezerve\src\assets\images" />
     </key>
   </component>
   <component name="RunManager" selected="npm.build">
@@ -122,7 +114,7 @@
       <workItem from="1628180335333" duration="5385000" />
       <workItem from="1628186719166" duration="12609000" />
       <workItem from="1628256594946" duration="14368000" />
-      <workItem from="1628275786009" duration="3715000" />
+      <workItem from="1628275786009" duration="4036000" />
     </task>
     <task id="LOCAL-00001" summary="success Status page">
       <created>1628000053045</created>
@@ -187,7 +179,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628275252618</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="minor fixed">
+      <created>1628282250245</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1628282250245</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -216,6 +215,7 @@
     <MESSAGE value="add exchange" />
     <MESSAGE value="success status page" />
     <MESSAGE value="success all application" />
-    <option name="LAST_COMMIT_MESSAGE" value="success all application" />
+    <MESSAGE value="minor fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="minor fixed" />
   </component>
 </project>

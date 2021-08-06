@@ -19,7 +19,8 @@
 }
 
 .Navbar .Navbar__logo img {
-  margin-bottom: 16px;
+  height: 96px;
+  width: 96px;
 }
 
 .Navbar .Navbar__logo span {
@@ -31,7 +32,7 @@
   display: flex;
   flex-direction: column;
   text-decoration: none;
-  margin-top: 156px;
+  margin-top: 130px;
 }
 
 .Navbar .Navbar__menu .Navbar__item, .Navbar .Navbar__menu .Navbar__item_active {
@@ -119,6 +120,11 @@
     margin-left: 12px;
   }
 
+  .Navbar .Navbar__logo img {
+    height: 64px;
+    width: 64px;
+  }
+
   .Navbar {
     margin-right: 20px;
   }
@@ -134,8 +140,8 @@
   }
 
   .Navbar .Navbar__logo img {
-    height: 28px;
-    width: 28px;
+    height: 42px;
+    width: 42px;
   }
 
   .Navbar .Navbar__menu a .Navbar__icon {
