@@ -1,22 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e16e39cb-95b9-4be9-81f0-4930dbe7e0a4" name="Changes" comment="change logo">
-      <change afterPath="$PROJECT_DIR$/src/assets/images/moon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/sun.svg" afterDir="false" />
+    <list default="true" id="e16e39cb-95b9-4be9-81f0-4930dbe7e0a4" name="Changes" comment="add theme switcher">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Layout/Layout.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout/Layout.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navbar/Navbar.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/Navbar.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navbar/Navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/Navbar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Rate/Rate.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Rate/Rate.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Total/Total.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Total/Total.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Vault/Vault.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Vault/Vault.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Status/Status.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Status/Status.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Swap/Swap.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Swap/Swap.module.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,7 +112,8 @@
       <workItem from="1628186719166" duration="12609000" />
       <workItem from="1628256594946" duration="14368000" />
       <workItem from="1628275786009" duration="4510000" />
-      <workItem from="1628283973824" duration="3475000" />
+      <workItem from="1628283973824" duration="3835000" />
+      <workItem from="1628287920033" duration="246000" />
     </task>
     <task id="LOCAL-00001" summary="success Status page">
       <created>1628000053045</created>
@@ -205,7 +192,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628282577127</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="add theme switcher">
+      <created>1628287699263</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1628287699263</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -236,6 +230,7 @@
     <MESSAGE value="success all application" />
     <MESSAGE value="minor fixed" />
     <MESSAGE value="change logo" />
-    <option name="LAST_COMMIT_MESSAGE" value="change logo" />
+    <MESSAGE value="add theme switcher" />
+    <option name="LAST_COMMIT_MESSAGE" value="add theme switcher" />
   </component>
 </project>
