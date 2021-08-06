@@ -6,11 +6,10 @@ import Web3 from 'web3';
 interface ISwap {
   windowWeb3: Web3 | undefined;
   ReserveExchangeContract: any;
-  ReserveContract: any;
   account: string;
 }
 
-const Swap = ({windowWeb3, ReserveExchangeContract, ReserveContract, account}: ISwap) => {
+const Swap = ({windowWeb3, ReserveExchangeContract, account}: ISwap) => {
   const [currentRate, setCurrentRate] = useState(0);
   const [exchangeValue, setExchangeValue] = useState('');
   const [exchangeResult, setExchangeResult] = useState('');
@@ -18,37 +17,26 @@ const Swap = ({windowWeb3, ReserveExchangeContract, ReserveContract, account}: I
 
   useEffect(() => {
     (async () => {
-      if (windowWeb3) {
-        ReserveExchangeContract?.methods.exchangeAmount(1).call().then((result: number) => {
-          setCurrentRate(result);
-          setIsActiveExchange(true);
-          // setAddress(contract.eth.)
-        });
-      }
+      const _currentRate = await ReserveExchangeContract?.methods.floorPrice().call();
+      setCurrentRate(_currentRate / 1e9);
+      setIsActiveExchange(true);
     })();
-  }, [ReserveExchangeContract?.methods, windowWeb3]);
+  }, [ReserveExchangeContract?.methods]);
+
+
+  const buyTokens = (etherAmount: string) => {
+    ReserveExchangeContract?.methods
+      .exchangeReserve(etherAmount)
+      .send({
+        value: etherAmount,
+        from: account
+      });
+  };
 
   const handleOnClick = () => {
     (async () => {
-      if (account) {
-        const _receiver = await ReserveExchangeContract?.methods.ReserveAddress().call();
-
-        windowWeb3?.eth
-          .sendTransaction({
-            from: account,
-            to: _receiver,
-            value: windowWeb3?.utils.toWei('0.5', 'ether')
-          })
-          .then(() => {
-            ReserveContract?.methods.transfer(_receiver, exchangeValue, {from: account}).call();
-          });
-        // ReserveContract?.methods
-        //   .transferFrom(account, await ReserveExchangeContract?.methods.ReserveAddress().call(), 1)
-        //   .send({
-        //     from: account
-        //   })
-
-
+      if (account && windowWeb3) {
+        buyTokens((Number(exchangeValue) * 1e9).toString());
       }
     })();
   };
@@ -76,7 +64,7 @@ const Swap = ({windowWeb3, ReserveExchangeContract, ReserveContract, account}: I
             type="number"
             min={0}
             className={styles.Swap__input}
-            value={exchangeResult}
+            value={Number(exchangeResult).toFixed(2)}
             onChange={(event) => {
               setExchangeResult(event.target.value);
               setExchangeValue((Number(event.target.value) / currentRate).toString());
@@ -93,7 +81,8 @@ const Swap = ({windowWeb3, ReserveExchangeContract, ReserveContract, account}: I
           </button>
         </div>
 
-        <span className={styles.Swap__rate}>*1 RZRV = {currentRate} DAI</span>
+        <span
+          className={styles.Swap__rate}>*1 RZRV = {new Intl.NumberFormat().format(Number(currentRate.toFixed(0)))} DAI</span>
       </div>
     </div>
   );

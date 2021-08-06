@@ -1,6 +1,7 @@
 import styles from './App.module.css';
 import ReserveExchange from './contracts/ReserveExchange.json';
 import Reserve from './contracts/Reserve.json';
+import DAI from './contracts/DAI.json';
 
 import {BrowserRouter} from 'react-router-dom';
 import Web3 from 'web3';
@@ -40,7 +41,7 @@ const App = () => {
   };
 
   const web3Modal = new Web3Modal({
-    network: 'testnet',
+    // network: 'testnet',
     cacheProvider: true, // optional
     providerOptions // required
   });
@@ -62,6 +63,7 @@ const App = () => {
             windowWeb3={windowWeb3}
             ReserveExchange={ReserveExchange}
             Reserve={Reserve}
+            DAI={DAI}
             web3Modal={web3Modal}
             setWindowWeb3={setWindowWeb3}
           />

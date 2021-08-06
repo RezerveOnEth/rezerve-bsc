@@ -18,19 +18,30 @@ const Status = ({windowWeb3, ReserveExchangeContract, ReserveContract}: IStatus)
   const [currentVault, setCurrentVault]: [number, Dispatch<SetStateAction<number>>] = useState(0);
   const [totalBurned, setTotalBurned]: [number, Dispatch<SetStateAction<number>>] = useState(0);
 
-
   useEffect(() => {
     (async () => {
       if (windowWeb3) {
-        ReserveContract?.methods.totalSupply().call().then((result: number) => {
-          setCurrentSupply(result / 1e9);
-        });
-        ReserveExchangeContract?.methods.floorPrice().call().then((result: number) => {
-          setCurrentRate(result / 1e9);
-        });
-        ReserveExchangeContract?.methods.daiBalance().call().then((result: number) => {
-          setCurrentVault(result / 1e9);
-        });
+        ReserveContract?.methods
+          .totalSupply()
+          .call()
+          .then((result: number) => {
+            setCurrentSupply(result / 1e9);
+          });
+
+        ReserveExchangeContract?.methods
+          .floorPrice()
+          .call()
+          .then((result: number) => {
+            setCurrentRate(result / 1e9);
+          });
+
+        ReserveExchangeContract?.methods
+          .daiBalance()
+          .call()
+          .then((result: number) => {
+            setCurrentVault(result / 1e9);
+          });
+
         ReserveContract?.methods
           .balanceOf(await ReserveContract?.methods.burnAddress().call())
           .call()
