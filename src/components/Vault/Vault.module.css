@@ -61,8 +61,8 @@
   }
 }
 
-/*@media (prefers-color-scheme: dark) {*/
-/*  .Vault .Vault__value div {*/
-/*    color: #fafafa;*/
-/*  }*/
-/*}*/
+@media (prefers-color-scheme: dark) {
+  .Vault .Vault__value div {
+    color: #f5f5f5;
+  }
+}

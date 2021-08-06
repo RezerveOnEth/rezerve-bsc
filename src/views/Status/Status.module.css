@@ -113,12 +113,12 @@
   }
 }
 
-/*@media (prefers-color-scheme: dark) {*/
-/*  .Status .Status__widgets > div {*/
-/*    background: #212121;*/
-/*  }*/
+@media (prefers-color-scheme: dark) {
+  .Status .Status__widgets > div {
+    background: #212121;
+  }
 
-/*  .Status .Status__widgets > div span {*/
-/*    color: #e0e0e0;*/
-/*  }*/
-/*}*/
+  .Status .Status__widgets > div span {
+    color: #e0e0e0;
+  }
+}

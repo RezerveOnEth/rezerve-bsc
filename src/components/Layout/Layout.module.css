@@ -19,8 +19,8 @@
   z-index: 0;
 }
 
-/*@media (prefers-color-scheme: dark) {*/
-/*  .Layout::before {*/
-/*    background-color: #1765ff;*/
-/*  }*/
-/*}*/
+@media (prefers-color-scheme: dark) {
+  .Layout::before {
+    background-color: #1765ff;
+  }
+}

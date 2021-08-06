@@ -18,7 +18,7 @@ const Swap = ({windowWeb3, ReserveExchangeContract, account}: ISwap) => {
   useEffect(() => {
     (async () => {
       const _currentRate = await ReserveExchangeContract?.methods.floorPrice().call();
-      setCurrentRate(_currentRate / 1e9);
+      setCurrentRate(_currentRate / 1e18);
       setIsActiveExchange(true);
     })();
   }, [ReserveExchangeContract?.methods]);
@@ -64,7 +64,7 @@ const Swap = ({windowWeb3, ReserveExchangeContract, account}: ISwap) => {
             type="number"
             min={0}
             className={styles.Swap__input}
-            value={Number(exchangeResult).toFixed(2)}
+            value={Number(exchangeResult).toFixed(9)}
             onChange={(event) => {
               setExchangeResult(event.target.value);
               setExchangeValue((Number(event.target.value) / currentRate).toString());
@@ -82,7 +82,7 @@ const Swap = ({windowWeb3, ReserveExchangeContract, account}: ISwap) => {
         </div>
 
         <span
-          className={styles.Swap__rate}>*1 RZRV = {new Intl.NumberFormat().format(Number(currentRate.toFixed(0)))} DAI</span>
+          className={styles.Swap__rate}>*1 RZRV = {currentRate.toFixed(9)} DAI</span>
       </div>
     </div>
   );

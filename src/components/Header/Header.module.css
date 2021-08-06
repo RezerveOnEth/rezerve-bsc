@@ -32,9 +32,9 @@
   }
 }
 
-/*@media (prefers-color-scheme: dark) {*/
-/*  .Header .Header__connect {*/
-/*    background: #212121;*/
-/*    color: #fafafa;*/
-/*  }*/
-/*}*/
+@media (prefers-color-scheme: dark) {
+  .Header .Header__connect {
+    background: #212121;
+    color: #f5f5f5;
+  }
+}

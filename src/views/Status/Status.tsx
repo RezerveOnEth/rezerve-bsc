@@ -21,8 +21,8 @@ const Status = ({windowWeb3, ReserveExchangeContract, ReserveContract}: IStatus)
   useEffect(() => {
     (async () => {
       if (windowWeb3) {
-        ReserveContract?.methods
-          .totalSupply()
+        ReserveExchangeContract?.methods
+          .currentsupply()
           .call()
           .then((result: number) => {
             setCurrentSupply(result / 1e9);
@@ -32,14 +32,14 @@ const Status = ({windowWeb3, ReserveExchangeContract, ReserveContract}: IStatus)
           .floorPrice()
           .call()
           .then((result: number) => {
-            setCurrentRate(result / 1e9);
+            setCurrentRate(result / 1e18);
           });
 
         ReserveExchangeContract?.methods
           .daiBalance()
           .call()
           .then((result: number) => {
-            setCurrentVault(result / 1e9);
+            setCurrentVault(result / 1e18);
           });
 
         ReserveContract?.methods

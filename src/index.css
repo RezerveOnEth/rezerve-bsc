@@ -27,9 +27,64 @@ html, body {
 }
 
 .CircularProgressbar-trail {
-  stroke-width: 5;
+  stroke-width: 5!important;
 }
 
 .CircularProgressbar-path {
-  stroke-width: 5;
+  stroke-width: 5!important;
+}
+
+@media (prefers-color-scheme: dark) {
+  .web3modal-modal-card {
+    background-color: #212121!important;
+  }
+
+  .web3modal-provider-container {
+    background-color: #212121!important;
+  }
+
+  .web3modal-provider-container:hover {
+    background-color: #2a2a2a!important;
+  }
+
+  .web3modal-provider-name {
+    color: #f5f5f5!important;
+  }
+
+  .walletconnect-modal__base {
+    background-color: #212121!important;
+  }
+
+  .walletconnect-qrcode__text {
+    color: #f5f5f5!important;
+  }
+
+  .walletconnect-modal__mobile__toggle {
+    background-color: #2a2a2a!important;
+    color: #f5f5f5!important;
+  }
+
+  .walletconnect-modal__mobile__toggle_selector {
+    background-color: #212121!important;
+  }
+
+  .walletconnect-modal__close__wrapper {
+    background-color: #212121!important;
+  }
+
+  .walletconnect-modal__close__line1, .walletconnect-modal__close__line2 {
+    border-color: #f5f5f5!important;
+  }
+
+  .walletconnect-modal__base__row:hover {
+    background-color: #2a2a2a!important;
+  }
+
+  .walletconnect-modal__base__row__h3 {
+    color: #f5f5f5!important;
+  }
+
+  .walletconnect-modal__base__row__right__caret {
+    filter: brightness(0) invert(1);
+  }
 }

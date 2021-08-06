@@ -167,16 +167,21 @@
 }
 
 
-/*@media (prefers-color-scheme: dark) {*/
-/*  .Swap .Swap__form {*/
-/*    background: #212121;*/
-/*  }*/
+@media (prefers-color-scheme: dark) {
+  .Swap .Swap__form {
+    background: #212121;
+  }
 
-/*  .Swap .Swap__form .Swap__rate {*/
-/*    color: #e0e0e0;*/
-/*  }*/
+  .Swap .Swap__form .Swap__rate {
+    color: #e0e0e0;
+  }
 
-/*  .Swap .Swap__form .Swap__title {*/
-/*    color: #fafafa;*/
-/*  }*/
-/*}*/
+  .Swap .Swap__form .Swap__title {
+    color: #f5f5f5;
+  }
+
+  .Swap .Swap__form .Swap__input {
+    background: #424242;
+    color: #f5f5f5;
+  }
+}

@@ -17,7 +17,7 @@ const Vault = ({currentVault, totalBurned}: IVault) => {
       <div className={styles.Vault__column}>
         <span>DAI in Vault</span>
         <div className={styles.Vault__value}>
-          <div>{new Intl.NumberFormat().format(Number(currentVault.toFixed(0)))}</div>
+          <div>{new Intl.NumberFormat().format(Number(currentVault.toFixed(3)))}</div>
         </div>
       </div>
     </div>

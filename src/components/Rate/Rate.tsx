@@ -12,7 +12,7 @@ const Rate = ({currentRate}: IRate) => {
         <span className={styles.Rate__title}>Current Vault Swap Rate</span>
         <div className={styles.Rate__value}>
           <span>1 RZRV =</span>
-          <span><span>{new Intl.NumberFormat().format(Number(currentRate.toFixed(0)))}</span> DAI</span>
+          <span><span>{currentRate.toFixed(9)}</span> DAI</span>
         </div>
       </header>
 
