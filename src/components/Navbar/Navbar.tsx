@@ -5,8 +5,15 @@ import swap_icon from '../../assets/images/swap-icon.png';
 import arrow_icon from '../../assets/images/arrow-icon.svg';
 
 import {Link, useLocation} from 'react-router-dom';
+import {Dispatch, SetStateAction} from 'react';
 
-const Navbar = () => {
+interface INavbar {
+  isDarkMode: boolean;
+  setIsDarkMode: Dispatch<SetStateAction<boolean>>;
+}
+
+const Navbar = ({isDarkMode, setIsDarkMode}: INavbar) => {
+
   const location = useLocation();
 
   return (
@@ -46,6 +53,20 @@ const Navbar = () => {
         {/*  </Link>*/}
         {/*</li>*/}
       </ul>
+
+      {/*<button>Switch to dark mode</button>*/}
+      <label className={styles.Navbar__switcher}>
+        <input
+          type="checkbox"
+          checked={isDarkMode}
+          onChange={(event) => {
+            document.documentElement.setAttribute('data-theme', !isDarkMode ? 'dark' : '');
+            localStorage.setItem('theme', !isDarkMode ? 'dark' : 'light');
+            setIsDarkMode(event.target.checked);
+          }}
+        />
+        <div/>
+      </label>
     </nav>
   );
 };

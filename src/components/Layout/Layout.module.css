@@ -17,10 +17,11 @@
   position: absolute;
   inset: 0 0 auto 0;
   z-index: 0;
+  transition: var(--transition);
 }
 
-@media (prefers-color-scheme: dark) {
-  .Layout::before {
-    background-color: #1765ff;
-  }
+[data-theme='dark'] .Layout::before {
+  background-color: #555555;
+  transition: var(--transition);
 }
+

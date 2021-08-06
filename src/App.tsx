@@ -15,6 +15,7 @@ import WalletConnectQRCodeModal from '@walletconnect/qrcode-modal';
 
 const App = () => {
   const [windowWeb3, setWindowWeb3]: [Web3 | undefined, Dispatch<SetStateAction<Web3 | undefined>>] = useState();
+  const [isDarkMode, setIsDarkMode]: [boolean, Dispatch<SetStateAction<boolean>>] = useState(Boolean(false));
 
   const providerOptions = {
     walletconnect: {
@@ -51,6 +52,17 @@ const App = () => {
       const web3 = new Web3(Web3.givenProvider || 'https://data-seed-prebsc-1-s1.binance.org:8545');
 
       setWindowWeb3(web3);
+
+      if (localStorage.getItem('theme') === 'dark') {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        setIsDarkMode(true);
+      } else if (localStorage.getItem('theme') === 'light') {
+        document.documentElement.setAttribute('data-theme', '');
+        setIsDarkMode(false);
+      } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        setIsDarkMode(true);
+      }
     })();
   }, []);
 
@@ -58,7 +70,10 @@ const App = () => {
     <div className={styles.App}>
       <BrowserRouter>
         <div className={styles.App__grid}>
-          <Navbar/>
+          <Navbar
+            isDarkMode={isDarkMode}
+            setIsDarkMode={setIsDarkMode}
+          />
           <Layout
             windowWeb3={windowWeb3}
             ReserveExchange={ReserveExchange}

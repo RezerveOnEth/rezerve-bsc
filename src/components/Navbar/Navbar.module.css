@@ -1,6 +1,7 @@
 .Navbar {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   margin-right: 80px;
 }
 
@@ -8,12 +9,49 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 30px;
+  margin-top: 20px;
   margin-left: 30px;
   text-decoration: none;
 }
 
-.Navbar .Navbar__menu .Navbar__item_active a .Navbar__icon img , .Navbar .Navbar__menu .Navbar__item a .Navbar__icon img {
+.Navbar .Navbar__switcher {
+  margin: 0 auto 20px auto;
+  cursor: pointer;
+  width: 76px;
+  height: 40px;
+  background-color: #e0e0e0;
+  position: relative;
+  border-radius: 36px;
+}
+
+.Navbar .Navbar__switcher input {
+  position: absolute;
+  z-index: -1;
+}
+
+.Navbar .Navbar__switcher input ~ div {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  height: 36px;
+  width: 36px;
+  transition: var(--transition);
+  border-radius: 50%;
+  margin: auto;
+  transform: translateX(2px);
+  background: url('../../assets/images/sun.svg') no-repeat center center #212121;
+  background-size: 70%;
+}
+
+.Navbar .Navbar__switcher input:checked ~ div {
+  transform: translateX(38px);
+  transition: var(--transition);
+  background: url('../../assets/images/moon.svg') no-repeat center center #212121;
+  background-size: 70%;
+}
+
+.Navbar .Navbar__menu .Navbar__item_active a .Navbar__icon img, .Navbar .Navbar__menu .Navbar__item a .Navbar__icon img {
   height: 20px;
   width: 20px;
 }
@@ -26,13 +64,13 @@
 .Navbar .Navbar__logo span {
   font-size: 16px;
   color: #141821;
+  transition: var(--transition);
 }
 
 .Navbar .Navbar__menu {
   display: flex;
   flex-direction: column;
   text-decoration: none;
-  margin-top: 130px;
 }
 
 .Navbar .Navbar__menu .Navbar__item, .Navbar .Navbar__menu .Navbar__item_active {
@@ -159,13 +197,18 @@
   }
 }
 
-@media (prefers-color-scheme: dark) {
-  .Navbar .Navbar__logo span {
-    font-size: 16px;
-    color: #f5f5f5;
-  }
+[data-theme='dark'] .Navbar .Navbar__logo span {
+  font-size: 16px;
+  color: #f5f5f5;
+  transition: var(--transition);
+}
 
-  .Navbar .Navbar__menu .Navbar__item_active a span {
-    color: #2972ff;
-  }
+[data-theme='dark'] .Navbar .Navbar__menu .Navbar__item_active a .Navbar__icon {
+  background-color: #555555;
+  transition: var(--transition);
+}
+
+[data-theme='dark'] .Navbar .Navbar__menu .Navbar__item_active a span {
+  color: #555555;
+  transition: var(--transition);
 }
