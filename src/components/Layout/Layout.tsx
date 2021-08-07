@@ -14,15 +14,13 @@ interface ILayout {
   windowWeb3: Web3 | undefined;
   ReserveExchange: any;
   Reserve: any;
-  DAI: any;
   web3Modal: Web3Modal;
   setWindowWeb3: Dispatch<SetStateAction<Web3 | undefined>>;
 }
 
-const Layout = ({windowWeb3, ReserveExchange, Reserve, DAI, web3Modal, setWindowWeb3}: ILayout) => {
+const Layout = ({windowWeb3, ReserveExchange, Reserve, web3Modal, setWindowWeb3}: ILayout) => {
   const [ReserveExchangeContract, setReserveExchangeContract]: [Contract | undefined, Dispatch<SetStateAction<Contract | undefined>>] = useState();
   const [ReserveContract, setReserveContract]: [Contract | undefined, Dispatch<SetStateAction<Contract | undefined>>] = useState();
-  const [DAIContract, setDAIContract]: [Contract | undefined, Dispatch<SetStateAction<Contract | undefined>>] = useState();
   const [account, setAccount]: [string, Dispatch<SetStateAction<string>>] = useState('');
 
   useEffect(() => {
@@ -35,13 +33,9 @@ const Layout = ({windowWeb3, ReserveExchange, Reserve, DAI, web3Modal, setWindow
         const ReserveAbi: any = Reserve.abi;
         const _ReserveContract: any = await new windowWeb3.eth.Contract(ReserveAbi, Reserve.address);
         setReserveContract(_ReserveContract);
-
-        const DAIAbi: any = DAI.abi;
-        const _DAIContract: any = await new windowWeb3.eth.Contract(DAIAbi, DAI.address);
-        setDAIContract(_DAIContract);
       }
     })();
-  }, [DAI.abi, DAI.address, Reserve.abi, Reserve.address, ReserveExchange.abi, ReserveExchange.address, windowWeb3]);
+  }, [Reserve.abi, Reserve.address, ReserveExchange.abi, ReserveExchange.address, windowWeb3]);
 
   return (
     <div className={styles.Layout}>

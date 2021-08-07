@@ -1,7 +1,6 @@
 import styles from './App.module.css';
 import ReserveExchange from './contracts/ReserveExchange.json';
 import Reserve from './contracts/Reserve.json';
-import DAI from './contracts/DAI.json';
 
 import {BrowserRouter} from 'react-router-dom';
 import Web3 from 'web3';
@@ -21,10 +20,6 @@ const App = () => {
     walletconnect: {
       package: WalletConnectProvider,
       options: {
-        rpc: {
-          56: 'https://data-seed-prebsc-1-s1.binance.org:8545/'
-        },
-        network: 'binance',
         infuraId: '57713afc30094d0e8470f83df3cf3e2a',
       }
     },
@@ -49,7 +44,9 @@ const App = () => {
 
   useEffect(() => {
     (async () => {
-      const web3 = new Web3(Web3.givenProvider || 'https://data-seed-prebsc-1-s1.binance.org:8545');
+      const web3 = new Web3(
+        new Web3.providers.WebsocketProvider('wss://mainnet.infura.io/ws/v3/57713afc30094d0e8470f83df3cf3e2a')
+      );
 
       setWindowWeb3(web3);
 
@@ -59,7 +56,7 @@ const App = () => {
       } else if (localStorage.getItem('theme') === 'light') {
         document.documentElement.setAttribute('data-theme', '');
         setIsDarkMode(false);
-      } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+      } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
         document.documentElement.setAttribute('data-theme', 'dark');
         setIsDarkMode(true);
       }
@@ -78,7 +75,6 @@ const App = () => {
             windowWeb3={windowWeb3}
             ReserveExchange={ReserveExchange}
             Reserve={Reserve}
-            DAI={DAI}
             web3Modal={web3Modal}
             setWindowWeb3={setWindowWeb3}
           />

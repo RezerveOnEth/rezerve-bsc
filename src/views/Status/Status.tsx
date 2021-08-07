@@ -22,7 +22,7 @@ const Status = ({windowWeb3, ReserveExchangeContract, ReserveContract}: IStatus)
     (async () => {
       if (windowWeb3) {
         ReserveExchangeContract?.methods
-          .currentsupply()
+          .currentSupply()
           .call()
           .then((result: number) => {
             setCurrentSupply(result / 1e9);

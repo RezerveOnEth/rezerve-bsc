@@ -78,7 +78,7 @@
     },
     {
       "inputs": [],
-      "name": "currentsupply",
+      "name": "currentSupply",
       "outputs": [
         {
           "internalType": "uint256",
@@ -227,5 +227,5 @@
       "type": "function"
     }
   ],
-  "address": "0x5352aB97e87AAaeCaeD1f0c06c18E685B37597B7"
+  "address": "0x6B9B0E579FdC73FA92968F83e7E22Eb2AB7C105A"
 }
