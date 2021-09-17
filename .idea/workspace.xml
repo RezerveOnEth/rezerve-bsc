@@ -1,39 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e16e39cb-95b9-4be9-81f0-4930dbe7e0a4" name="Changes" comment="add adaptive for theme switcher">
+    <list default="true" id="ebd6c54e-cafe-453e-88ef-858796dcde37" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/rezerve-clone.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/rezerve.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/contracts/DAI.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/contracts/DAI.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navbar/Navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/Navbar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Rate/Rate.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Rate/Rate.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Vault/Vault.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Vault/Vault.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/contracts/Reserve.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/contracts/Reserve.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/contracts/ReserveExchange.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/contracts/ReserveExchange.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Status/Status.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Status/Status.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="TypeScript JSX File" />
-        <option value="CSS File" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitSEFilterConfiguration">
-    <file-type-list>
-      <filtered-out-file-type name="LOCAL_BRANCH" />
-      <filtered-out-file-type name="REMOTE_BRANCH" />
-      <filtered-out-file-type name="TAG" />
-      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
-    </file-type-list>
-  </component>
-  <component name="ProjectId" id="1wD3tvn9GGAKvyA9p9VfREr6dXg" />
+  <component name="ProjectId" id="1yHZxp5e4Wul4gIwTxYirCbPI4q" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -46,35 +36,13 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/contracts" />
-    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="ts.external.directory.path" value="C:\Users\elesk\OneDrive\Desktop\Work\rezerve\node_modules\typescript\lib" />
+    <property name="ts.external.directory.path" value="C:\Users\elesk\OneDrive\Desktop\Work\rezerve-clone\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\elesk\OneDrive\Desktop\Work\rezerve\src\contracts" />
-      <recent name="C:\Users\elesk\OneDrive\Desktop\Work\rezerve\public" />
-      <recent name="C:\Users\elesk\OneDrive\Desktop\Work\rezerve\src\assets\fonts\gazillions" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\elesk\OneDrive\Desktop\Work\rezerve\src\assets\images" />
-    </key>
-  </component>
-  <component name="RunManager" selected="npm.start">
-    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="build" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager">
     <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -88,123 +56,19 @@
     <recent_temporary>
       <list>
         <item itemvalue="npm.start" />
-        <item itemvalue="npm.build" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="e16e39cb-95b9-4be9-81f0-4930dbe7e0a4" name="Changes" comment="" />
-      <created>1627979555447</created>
+      <changelist id="ebd6c54e-cafe-453e-88ef-858796dcde37" name="Changes" comment="" />
+      <created>1631910731565</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1627979555447</updated>
-      <workItem from="1627979558673" duration="2333000" />
-      <workItem from="1627988372484" duration="1852000" />
-      <workItem from="1627996945974" duration="1335000" />
-      <workItem from="1627998594497" duration="2649000" />
-      <workItem from="1628004079322" duration="3289000" />
-      <workItem from="1628010745999" duration="8342000" />
-      <workItem from="1628065409080" duration="6601000" />
-      <workItem from="1628081870352" duration="4710000" />
-      <workItem from="1628087512140" duration="1161000" />
-      <workItem from="1628093049967" duration="10181000" />
-      <workItem from="1628151100715" duration="4801000" />
-      <workItem from="1628166616493" duration="431000" />
-      <workItem from="1628167119560" duration="97000" />
-      <workItem from="1628180335333" duration="5385000" />
-      <workItem from="1628186719166" duration="12609000" />
-      <workItem from="1628256594946" duration="14368000" />
-      <workItem from="1628275786009" duration="4510000" />
-      <workItem from="1628283973824" duration="3835000" />
-      <workItem from="1628287920033" duration="246000" />
+      <updated>1631910731565</updated>
+      <workItem from="1631910735011" duration="368000" />
     </task>
-    <task id="LOCAL-00001" summary="success Status page">
-      <created>1628000053045</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1628000053045</updated>
-    </task>
-    <task id="LOCAL-00002" summary="add donut progressbar">
-      <created>1628004749346</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1628004749346</updated>
-    </task>
-    <task id="LOCAL-00003" summary="add rate chart">
-      <created>1628006864215</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1628006864215</updated>
-    </task>
-    <task id="LOCAL-00004" summary="success UI development">
-      <created>1628019151388</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1628019151388</updated>
-    </task>
-    <task id="LOCAL-00005" summary="add wallet connect">
-      <created>1628071841065</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1628071841065</updated>
-    </task>
-    <task id="LOCAL-00006" summary="change favicon">
-      <created>1628072045325</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1628072045325</updated>
-    </task>
-    <task id="LOCAL-00007" summary="add exchange">
-      <created>1628086621168</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1628086621168</updated>
-    </task>
-    <task id="LOCAL-00008" summary="success status page">
-      <created>1628191345007</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1628191345007</updated>
-    </task>
-    <task id="LOCAL-00009" summary="success all application">
-      <created>1628275252618</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1628275252618</updated>
-    </task>
-    <task id="LOCAL-00010" summary="minor fixed">
-      <created>1628282250245</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1628282250245</updated>
-    </task>
-    <task id="LOCAL-00011" summary="change logo">
-      <created>1628282577127</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1628282577127</updated>
-    </task>
-    <task id="LOCAL-00012" summary="add theme switcher">
-      <created>1628287699263</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1628287699263</updated>
-    </task>
-    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -220,22 +84,8 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="success Status page" />
-    <MESSAGE value="add donut progressbar" />
-    <MESSAGE value="add rate chart" />
-    <MESSAGE value="success UI development" />
-    <MESSAGE value="add wallet connect" />
-    <MESSAGE value="change favicon" />
-    <MESSAGE value="add exchange" />
-    <MESSAGE value="success status page" />
-    <MESSAGE value="success all application" />
-    <MESSAGE value="minor fixed" />
-    <MESSAGE value="change logo" />
-    <MESSAGE value="add theme switcher" />
-    <option name="LAST_COMMIT_MESSAGE" value="add theme switcher" />
   </component>
 </project>
