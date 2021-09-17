@@ -45,7 +45,7 @@ const App = () => {
   useEffect(() => {
     (async () => {
       const web3 = new Web3(
-        new Web3.providers.WebsocketProvider('wss://mainnet.infura.io/ws/v3/57713afc30094d0e8470f83df3cf3e2a')
+        new Web3.providers.HttpProvider('https://bsc-dataseed1.binance.org:443')
       );
 
       setWindowWeb3(web3);
