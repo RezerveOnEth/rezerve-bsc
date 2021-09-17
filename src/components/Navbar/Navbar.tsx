@@ -46,15 +46,8 @@ const Navbar = ({isDarkMode, setIsDarkMode}: INavbar) => {
             <img src={arrow_icon} alt=""/>
           </Link>
         </li>
-        {/*<li>*/}
-        {/*  <Link to="#">*/}
-        {/*    <div className={styles.Navbar__icon}></div>*/}
-        {/*    <span>Staking</span>*/}
-        {/*  </Link>*/}
-        {/*</li>*/}
       </ul>
 
-      {/*<button>Switch to dark mode</button>*/}
       <label className={styles.Navbar__switcher}>
         <input
           type="checkbox"

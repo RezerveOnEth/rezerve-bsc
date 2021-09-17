@@ -1,26 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ebd6c54e-cafe-453e-88ef-858796dcde37" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/rezerve-clone.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/rezerve.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navbar/Navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/Navbar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Rate/Rate.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Rate/Rate.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Vault/Vault.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Vault/Vault.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/contracts/Reserve.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/contracts/Reserve.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/contracts/ReserveExchange.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/contracts/ReserveExchange.json" afterDir="false" />
-    </list>
+    <list default="true" id="ebd6c54e-cafe-453e-88ef-858796dcde37" name="Changes" comment="renames from DAI to BUSD" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1yHZxp5e4Wul4gIwTxYirCbPI4q" />
@@ -67,8 +59,37 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1631910731565</updated>
-      <workItem from="1631910735011" duration="368000" />
+      <workItem from="1631910735011" duration="702000" />
     </task>
+    <task id="LOCAL-00001" summary="change workspace">
+      <created>1631911210159</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1631911210159</updated>
+    </task>
+    <task id="LOCAL-00002" summary="change network">
+      <created>1631911367828</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1631911367828</updated>
+    </task>
+    <task id="LOCAL-00003" summary="change addresses">
+      <created>1631911391757</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1631911391757</updated>
+    </task>
+    <task id="LOCAL-00004" summary="renames from DAI to BUSD">
+      <created>1631911429784</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1631911429784</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -87,5 +108,10 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="change workspace" />
+    <MESSAGE value="change network" />
+    <MESSAGE value="change addresses" />
+    <MESSAGE value="renames from DAI to BUSD" />
+    <option name="LAST_COMMIT_MESSAGE" value="renames from DAI to BUSD" />
   </component>
 </project>
