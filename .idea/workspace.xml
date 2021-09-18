@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ebd6c54e-cafe-453e-88ef-858796dcde37" name="Changes" comment="add RezerveToken contract">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Swap/Swap.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Swap/Swap.tsx" afterDir="false" />
-    </list>
+    <list default="true" id="ebd6c54e-cafe-453e-88ef-858796dcde37" name="Changes" comment="change approval button logic" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,7 +34,17 @@
     <property name="ts.external.directory.path" value="C:\Users\elesk\OneDrive\Desktop\Work\rezerve-clone\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="npm.build">
+    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -50,6 +57,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.build" />
         <item itemvalue="npm.start" />
       </list>
     </recent_temporary>
@@ -67,7 +75,7 @@
       <workItem from="1631973547200" duration="2988000" />
       <workItem from="1631980743710" duration="130000" />
       <workItem from="1631980967338" duration="18000" />
-      <workItem from="1631994894582" duration="297000" />
+      <workItem from="1631994894582" duration="600000" />
     </task>
     <task id="LOCAL-00001" summary="change workspace">
       <created>1631911210159</created>
@@ -111,7 +119,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631911675251</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="change approval button logic">
+      <created>1631995472597</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1631995472597</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -137,6 +152,7 @@
     <MESSAGE value="renames from DAI to BUSD" />
     <MESSAGE value="remove unused code" />
     <MESSAGE value="add RezerveToken contract" />
-    <option name="LAST_COMMIT_MESSAGE" value="add RezerveToken contract" />
+    <MESSAGE value="change approval button logic" />
+    <option name="LAST_COMMIT_MESSAGE" value="change approval button logic" />
   </component>
 </project>
