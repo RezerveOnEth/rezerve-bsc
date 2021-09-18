@@ -14,13 +14,15 @@ interface ILayout {
   windowWeb3: Web3 | undefined;
   ReserveExchange: any;
   Reserve: any;
+  ReserveToken: any;
   web3Modal: Web3Modal;
   setWindowWeb3: Dispatch<SetStateAction<Web3 | undefined>>;
 }
 
-const Layout = ({windowWeb3, ReserveExchange, Reserve, web3Modal, setWindowWeb3}: ILayout) => {
+const Layout = ({windowWeb3, ReserveExchange, Reserve, ReserveToken, web3Modal, setWindowWeb3}: ILayout) => {
   const [ReserveExchangeContract, setReserveExchangeContract]: [Contract | undefined, Dispatch<SetStateAction<Contract | undefined>>] = useState();
   const [ReserveContract, setReserveContract]: [Contract | undefined, Dispatch<SetStateAction<Contract | undefined>>] = useState();
+  const [ReserveTokenContract, setReserveTokenContract]: [Contract | undefined, Dispatch<SetStateAction<Contract | undefined>>] = useState();
   const [account, setAccount]: [string, Dispatch<SetStateAction<string>>] = useState('');
 
   useEffect(() => {
@@ -33,9 +35,13 @@ const Layout = ({windowWeb3, ReserveExchange, Reserve, web3Modal, setWindowWeb3}
         const ReserveAbi: any = Reserve.abi;
         const _ReserveContract: any = await new windowWeb3.eth.Contract(ReserveAbi, Reserve.address);
         setReserveContract(_ReserveContract);
+
+        const ReserveTokenAbi: any = ReserveToken.abi;
+        const _ReserveTokenContract: any = await new windowWeb3.eth.Contract(ReserveTokenAbi, ReserveToken.address);
+        setReserveTokenContract(_ReserveTokenContract);
       }
     })();
-  }, [Reserve.abi, Reserve.address, ReserveExchange.abi, ReserveExchange.address, windowWeb3]);
+  }, [Reserve.abi, Reserve.address, ReserveExchange.abi, ReserveExchange.address, ReserveToken.abi, ReserveToken.address, windowWeb3]);
 
   return (
     <div className={styles.Layout}>
@@ -57,6 +63,7 @@ const Layout = ({windowWeb3, ReserveExchange, Reserve, web3Modal, setWindowWeb3}
           <Swap
             windowWeb3={windowWeb3}
             ReserveExchangeContract={ReserveExchangeContract}
+            ReserveTokenContract={ReserveTokenContract}
             account={account}
           />
         </Route>

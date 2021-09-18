@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ebd6c54e-cafe-453e-88ef-858796dcde37" name="Changes" comment="renames from DAI to BUSD" />
+    <list default="true" id="ebd6c54e-cafe-453e-88ef-858796dcde37" name="Changes" comment="add RezerveToken contract">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Layout/Layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout/Layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/contracts/RezerveToken.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/contracts/ReserveToken.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Swap/Swap.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Swap/Swap.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Swap/Swap.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Swap/Swap.tsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -59,7 +66,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1631910731565</updated>
-      <workItem from="1631910735011" duration="702000" />
+      <workItem from="1631910735011" duration="1345000" />
+      <workItem from="1631968230657" duration="76000" />
+      <workItem from="1631973547200" duration="2988000" />
     </task>
     <task id="LOCAL-00001" summary="change workspace">
       <created>1631911210159</created>
@@ -89,7 +98,21 @@
       <option name="project" value="LOCAL" />
       <updated>1631911429784</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="remove unused code">
+      <created>1631911527527</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1631911527527</updated>
+    </task>
+    <task id="LOCAL-00006" summary="add RezerveToken contract">
+      <created>1631911675251</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1631911675251</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -105,6 +128,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -112,6 +136,8 @@
     <MESSAGE value="change network" />
     <MESSAGE value="change addresses" />
     <MESSAGE value="renames from DAI to BUSD" />
-    <option name="LAST_COMMIT_MESSAGE" value="renames from DAI to BUSD" />
+    <MESSAGE value="remove unused code" />
+    <MESSAGE value="add RezerveToken contract" />
+    <option name="LAST_COMMIT_MESSAGE" value="add RezerveToken contract" />
   </component>
 </project>

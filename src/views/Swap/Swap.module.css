@@ -77,7 +77,7 @@
   margin: 4px auto;
 }
 
-.Swap .Swap__form .Swap__button {
+.Swap .Swap__form .Swap__button, .Swap .Swap__form .Swap__button_approve {
   background: linear-gradient(180deg, #205EB3 0%, #86AFFB 165.27%);
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
   border-radius: 24px;
@@ -92,12 +92,16 @@
   transition: var(--transition);
 }
 
-.Swap .Swap__form .Swap__button:hover {
+.Swap .Swap__form .Swap__button_approve {
+  background: linear-gradient(180deg, #34b320 0%, #86AFFB 165.27%);
+}
+
+.Swap .Swap__form .Swap__button:hover, .Swap .Swap__form .Swap__button_approve:hover {
   text-shadow: none;
   transition: var(--transition);
 }
 
-.Swap .Swap__form .Swap__button:active {
+.Swap .Swap__form .Swap__button:active, .Swap .Swap__form .Swap__button_approve:active {
   text-shadow: none;
   box-shadow: none;
   transition: var(--transition);
@@ -140,7 +144,7 @@
     font-size: 24px;
   }
 
-  .Swap .Swap__form .Swap__button {
+  .Swap .Swap__form .Swap__button, .Swap .Swap__form .Swap__button_approve {
     padding: 8px 24px;
     font-size: 18px;
   }
@@ -151,7 +155,7 @@
     font-size: 36px;
   }
 
-  .Swap .Swap__form .Swap__button {
+  .Swap .Swap__form .Swap__button .Swap .Swap__form .Swap__button_approve {
     width: 100%;
   }
 

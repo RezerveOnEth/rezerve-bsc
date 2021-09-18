@@ -1,19 +1,21 @@
 import styles from './Swap.module.css';
 import arrow_icon_alt from '../../assets/images/arrow-icon-alt.svg';
-import {useEffect, useState} from 'react';
+import {Dispatch, SetStateAction, useEffect, useState} from 'react';
 import Web3 from 'web3';
 
 interface ISwap {
   windowWeb3: Web3 | undefined;
   ReserveExchangeContract: any;
+  ReserveTokenContract: any;
   account: string;
 }
 
-const Swap = ({windowWeb3, ReserveExchangeContract, account}: ISwap) => {
+const Swap = ({windowWeb3, ReserveExchangeContract, ReserveTokenContract, account}: ISwap) => {
   const [currentRate, setCurrentRate] = useState(0);
   const [exchangeValue, setExchangeValue] = useState('');
   const [exchangeResult, setExchangeResult] = useState('');
   const [isActiveExchange, setIsActiveExchange] = useState(false);
+  const [isVisibleApproveButton, setIsVisibleApproveButton]: [boolean, Dispatch<SetStateAction<boolean>>] = useState(Boolean(false));
 
   useEffect(() => {
     (async () => {
@@ -30,15 +32,30 @@ const Swap = ({windowWeb3, ReserveExchangeContract, account}: ISwap) => {
       .send({
         value: etherAmount,
         from: account
-      });
+      })
+      .then(() => setIsVisibleApproveButton(false))
+      .catch(() => setIsVisibleApproveButton(false));
   };
 
   const handleOnClick = () => {
     (async () => {
       if (account && windowWeb3) {
-        buyTokens((Number(exchangeValue) * 1e9).toString());
+        setIsVisibleApproveButton(true);
       }
     })();
+  };
+
+  const approve = (etherAmount: string) => {
+    ReserveTokenContract?.methods
+      .approve('0x6B9B0E579FdC73FA92968F83e7E22Eb2AB7C105A', '21000000000000000')
+      .send({
+        value: etherAmount,
+        from: account
+      })
+      .then(() => buyTokens(etherAmount))
+      .catch();
+
+    // buyTokens((Number(exchangeValue) * 1e9).toString())
   };
 
   return (
@@ -72,13 +89,26 @@ const Swap = ({windowWeb3, ReserveExchangeContract, account}: ISwap) => {
             disabled={true}
           />
 
-          <button
-            className={styles.Swap__button}
-            disabled={!isActiveExchange}
-            onClick={handleOnClick}
-          >
-            Submit
-          </button>
+          {
+            !isVisibleApproveButton &&
+            <button
+              className={styles.Swap__button}
+              disabled={!isActiveExchange}
+              onClick={handleOnClick}
+            >
+              Submit
+            </button>
+          }
+          {
+            isVisibleApproveButton &&
+            <button
+              className={styles.Swap__button_approve}
+              onClick={() => approve((Number(exchangeValue) * 1e9).toString())}
+            >
+              Approve
+            </button>
+
+          }
         </div>
 
         <span

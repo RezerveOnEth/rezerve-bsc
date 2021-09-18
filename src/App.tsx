@@ -1,6 +1,7 @@
 import styles from './App.module.css';
 import ReserveExchange from './contracts/ReserveExchange.json';
 import Reserve from './contracts/Reserve.json';
+import ReserveToken from './contracts/ReserveToken.json';
 
 import {BrowserRouter} from 'react-router-dom';
 import Web3 from 'web3';
@@ -75,6 +76,7 @@ const App = () => {
             windowWeb3={windowWeb3}
             ReserveExchange={ReserveExchange}
             Reserve={Reserve}
+            ReserveToken={ReserveToken}
             web3Modal={web3Modal}
             setWindowWeb3={setWindowWeb3}
           />
