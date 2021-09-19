@@ -107,6 +107,11 @@
   transition: var(--transition);
 }
 
+.Swap .Swap__label span {
+  font-size: 22px;
+  font-weight: 500;
+}
+
 .Swap .Swap__form .Swap__rate {
   font-size: 16px;
   color: #565656;
@@ -148,6 +153,10 @@
     padding: 8px 24px;
     font-size: 18px;
   }
+
+  .Swap .Swap__label span {
+    font-size: 18px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -171,6 +180,10 @@
 
   .Swap .Swap__form .Swap__container {
     padding: 0 16px;
+  }
+
+  .Swap .Swap__label span {
+    font-size: 14px;
   }
 }
 

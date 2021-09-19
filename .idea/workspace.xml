@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ebd6c54e-cafe-453e-88ef-858796dcde37" name="Changes" comment="change approval button logic" />
+    <list default="true" id="ebd6c54e-cafe-453e-88ef-858796dcde37" name="Changes" comment="change from DAI to BUSD">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navbar/Navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/Navbar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Swap/Swap.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Swap/Swap.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Swap/Swap.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Swap/Swap.tsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -57,8 +62,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.build" />
         <item itemvalue="npm.start" />
+        <item itemvalue="npm.build" />
       </list>
     </recent_temporary>
   </component>
@@ -75,7 +80,8 @@
       <workItem from="1631973547200" duration="2988000" />
       <workItem from="1631980743710" duration="130000" />
       <workItem from="1631980967338" duration="18000" />
-      <workItem from="1631994894582" duration="600000" />
+      <workItem from="1631994894582" duration="886000" />
+      <workItem from="1632044767286" duration="282000" />
     </task>
     <task id="LOCAL-00001" summary="change workspace">
       <created>1631911210159</created>
@@ -126,7 +132,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631995472597</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="change from DAI to BUSD">
+      <created>1631995767973</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1631995767974</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -153,6 +166,7 @@
     <MESSAGE value="remove unused code" />
     <MESSAGE value="add RezerveToken contract" />
     <MESSAGE value="change approval button logic" />
-    <option name="LAST_COMMIT_MESSAGE" value="change approval button logic" />
+    <MESSAGE value="change from DAI to BUSD" />
+    <option name="LAST_COMMIT_MESSAGE" value="change from DAI to BUSD" />
   </component>
 </project>

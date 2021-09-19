@@ -41,7 +41,7 @@ const Navbar = ({isDarkMode, setIsDarkMode}: INavbar) => {
               <div className={styles.Navbar__icon}>
                 <img src={swap_icon} alt=""/>
               </div>
-              <span>Swap - RZRV x BUSD</span>
+              <span>Swap - RZRV x DAI</span>
             </div>
             <img src={arrow_icon} alt=""/>
           </Link>

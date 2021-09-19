@@ -32,7 +32,7 @@ const Swap = ({windowWeb3, ReserveExchangeContract, ReserveTokenContract, accoun
       .send({
         value: etherAmount,
         from: account
-      })
+      });
   };
 
   const handleOnClick = () => {
@@ -61,29 +61,35 @@ const Swap = ({windowWeb3, ReserveExchangeContract, ReserveTokenContract, accoun
         <div className={styles.Swap__container}>
           <h2 className={styles.Swap__title}>Vault Swap</h2>
 
-          <input
-            type="number"
-            min={0}
-            className={styles.Swap__input}
-            value={exchangeValue}
-            onChange={(event) => {
-              setExchangeValue(event.target.value);
-              setExchangeResult((Number(event.target.value) * currentRate).toString());
-            }}
-            disabled={!isActiveExchange}
-          />
+          <label className={styles.Swap__label}>
+            <span>RZRV:</span>
+            <input
+              type="number"
+              min={0}
+              className={styles.Swap__input}
+              value={exchangeValue}
+              onChange={(event) => {
+                setExchangeValue(event.target.value);
+                setExchangeResult((Number(event.target.value) * currentRate).toString());
+              }}
+              disabled={!isActiveExchange}
+            />
+          </label>
           <img src={arrow_icon_alt} alt=""/>
-          <input
-            type="number"
-            min={0}
-            className={styles.Swap__input}
-            value={Number(exchangeResult).toFixed(9)}
-            onChange={(event) => {
-              setExchangeResult(event.target.value);
-              setExchangeValue((Number(event.target.value) / currentRate).toString());
-            }}
-            disabled={true}
-          />
+          <label className={styles.Swap__label}>
+            <span>DAI:</span>
+            <input
+              type="number"
+              min={0}
+              className={styles.Swap__input}
+              value={Number(exchangeResult).toFixed(9)}
+              onChange={(event) => {
+                setExchangeResult(event.target.value);
+                setExchangeValue((Number(event.target.value) / currentRate).toString());
+              }}
+              disabled={true}
+            />
+          </label>
 
           {
             isVisibleApproveButton
@@ -106,7 +112,7 @@ const Swap = ({windowWeb3, ReserveExchangeContract, ReserveTokenContract, accoun
         </div>
 
         <span
-          className={styles.Swap__rate}>*1 RZRV = {currentRate.toFixed(9)} BUSD</span>
+          className={styles.Swap__rate}>*1 RZRV = {currentRate.toFixed(9)} DAI</span>
       </div>
     </div>
   );
