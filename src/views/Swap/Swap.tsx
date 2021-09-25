@@ -38,7 +38,7 @@ const Swap = ({windowWeb3, ReserveExchangeContract, ReserveTokenContract, accoun
   const handleOnClick = () => {
     (async () => {
       if (account && windowWeb3) {
-        buyTokens((Number(exchangeValue) * 1e9).toString());
+        buyTokens((Number(exchangeValue) * 1e18).toString());
       }
     })();
   };
