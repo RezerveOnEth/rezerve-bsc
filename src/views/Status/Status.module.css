@@ -113,6 +113,12 @@
   }
 }
 
+@media (max-width: 360px) {
+  .Status .Status__widgets {
+    margin: 10% 8px 0 8px;
+  }
+}
+
 [data-theme='dark'] .Status .Status__widgets > div {
   background: #212121;
   transition: var(--transition);

@@ -31,7 +31,7 @@
 
 .Rate .Rate__value span:last-child {
   font-weight: 500;
-  font-size: 26px;
+  font-size: 22px;
   color: #15181A;
   transition: var(--transition);
 }
@@ -39,6 +39,31 @@
 @media (max-width: 1170px) {
   .Rate header {
     margin: 8px 24px 0 24px;
+  }
+}
+
+@media (max-width: 840px) {
+  .Rate .Rate__value span:first-child {
+    margin-bottom: 20px;
+  }
+
+  .Rate .Rate__value span:last-child {
+    font-size: 18px;
+  }
+
+  .Rate header {
+    margin: 8px 12px 0 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Rate .Rate__value span:first-child {
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+
+  .Rate .Rate__value span:last-child {
+    font-size: 18px;
   }
 }
 

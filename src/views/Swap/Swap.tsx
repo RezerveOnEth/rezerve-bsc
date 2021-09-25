@@ -77,12 +77,12 @@ const Swap = ({windowWeb3, ReserveExchangeContract, ReserveTokenContract, accoun
           </label>
           <img src={arrow_icon_alt} alt=""/>
           <label className={styles.Swap__label}>
-            <span>DAI:</span>
+            <span>BUSD:</span>
             <input
               type="number"
               min={0}
               className={styles.Swap__input}
-              value={Number(exchangeResult).toFixed(9)}
+              value={Number(exchangeResult).toFixed(18)}
               onChange={(event) => {
                 setExchangeResult(event.target.value);
                 setExchangeValue((Number(event.target.value) / currentRate).toString());
@@ -112,7 +112,7 @@ const Swap = ({windowWeb3, ReserveExchangeContract, ReserveTokenContract, accoun
         </div>
 
         <span
-          className={styles.Swap__rate}>*1 RZRV = {currentRate.toFixed(9)} DAI</span>
+          className={styles.Swap__rate}>*1 RZRV = {currentRate.toFixed(18)}&nbsp;BUSD</span>
       </div>
     </div>
   );
