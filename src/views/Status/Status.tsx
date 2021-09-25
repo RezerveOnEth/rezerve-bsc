@@ -32,7 +32,7 @@ const Status = ({windowWeb3, ReserveExchangeContract, ReserveContract}: IStatus)
           .floorPrice()
           .call()
           .then((result: number) => {
-            setCurrentRate(result / 1e18);
+            setCurrentRate(result / 1e9);
           });
 
         ReserveExchangeContract?.methods
