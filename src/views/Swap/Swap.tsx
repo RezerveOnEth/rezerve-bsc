@@ -20,7 +20,7 @@ const Swap = ({windowWeb3, ReserveExchangeContract, ReserveTokenContract, accoun
   useEffect(() => {
     (async () => {
       const _currentRate = await ReserveExchangeContract?.methods.floorPrice().call();
-      setCurrentRate(_currentRate / 1e18);
+      setCurrentRate(_currentRate / 1e9);
       setIsActiveExchange(true);
     })();
   }, [ReserveExchangeContract?.methods]);
@@ -112,7 +112,7 @@ const Swap = ({windowWeb3, ReserveExchangeContract, ReserveTokenContract, accoun
         </div>
 
         <span
-          className={styles.Swap__rate}>*1 RZRV = {currentRate.toFixed(0)}&nbsp;BUSD</span>
+          className={styles.Swap__rate}>*1 RZRV = {currentRate.toFixed(18)}&nbsp;BUSD</span>
       </div>
     </div>
   );
