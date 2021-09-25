@@ -112,7 +112,7 @@ const Swap = ({windowWeb3, ReserveExchangeContract, ReserveTokenContract, accoun
         </div>
 
         <span
-          className={styles.Swap__rate}>*1 RZRV = {currentRate.toFixed(9)}&nbsp;BUSD</span>
+          className={styles.Swap__rate}>*1 RZRV = {currentRate.toFixed(0)}&nbsp;BUSD</span>
       </div>
     </div>
   );
