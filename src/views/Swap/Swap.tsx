@@ -82,7 +82,7 @@ const Swap = ({windowWeb3, ReserveExchangeContract, ReserveTokenContract, accoun
               type="number"
               min={0}
               className={styles.Swap__input}
-              value={Number(exchangeResult).toFixed(9)}
+              value={Number(exchangeResult).toFixed(18)}
               onChange={(event) => {
                 setExchangeResult(event.target.value);
                 setExchangeValue((Number(event.target.value) / currentRate).toString());
@@ -96,7 +96,7 @@ const Swap = ({windowWeb3, ReserveExchangeContract, ReserveTokenContract, accoun
               ?
               <button
                 className={styles.Swap__button_approve}
-                onClick={() => approve((Number(exchangeValue) * 1e9).toString())}
+                onClick={() => approve((Number(exchangeValue) * 1e18).toString())}
               >
                 Approve
               </button>
@@ -112,7 +112,7 @@ const Swap = ({windowWeb3, ReserveExchangeContract, ReserveTokenContract, accoun
         </div>
 
         <span
-          className={styles.Swap__rate}>*1 RZRV = {currentRate.toFixed(9)}&nbsp;BUSD</span>
+          className={styles.Swap__rate}>*1 RZRV = {currentRate.toFixed(18)}&nbsp;BUSD</span>
       </div>
     </div>
   );
